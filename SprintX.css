@@ -1,6 +1,7 @@
 #button {
     background-color: #EBF2F0;
     border: none;
+    max-height: 100px;
     border-radius: 6px;
     padding: 20px 30px;
     cursor: help;
@@ -86,8 +87,9 @@
 .content {
     width: 0;
     visibility: hidden;
+    height: 131px;
     padding: 0 18px;
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: gray;
     position: relative;
     z-index: 2;
@@ -101,4 +103,25 @@
     background-color: #bbb;
     border-radius: 50%;
     cursor: pointer;
+}
+iframe {
+    width: 150px;
+    height: 75px;
+}
+
+#nobutton {
+    background-color: #EBF2F0;
+    border: none;
+    max-height: 100px;
+    border-radius: 6px;
+    padding: 20px 30px;
+    cursor: not-allowed;
+    width: 10%;
+    left: 18px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
 }
