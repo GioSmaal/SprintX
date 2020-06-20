@@ -3,10 +3,27 @@
     border: none;
     border-radius: 6px;
     padding: 20px 30px;
-    cursor: pointer;
+    cursor: help;
     width: 10%;
-    margin-left: 50px;
-    margin-right: 50px;
+    left: 18px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+#category {
+    background-color: #EBF2F0;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 20px 30px;
+    width: 15%;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -17,6 +34,12 @@
     margin-top: 25px;
     margin-bottom: 25px;
     position: absolute;
+}
+
+#categories {
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
 }
 
 #bronze {
@@ -59,4 +82,23 @@
     display: flex;
     justify-content: center;
     background-color: violet;
+}
+.content {
+    width: 0;
+    visibility: hidden;
+    padding: 0 18px;
+    overflow-x: hidden;
+    background-color: gray;
+    position: relative;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+#dot {
+    height: 25px;
+    width: 25px;
+    margin: 0 auto;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
 }
